@@ -1,8 +1,17 @@
-# React + Vite
+# LMS-frontend
+Steps to set up a plain vite project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Open vs code and navigate to directory (where project is to be created)
 
-Currently, two official plugins are available:
+2. Open terminal and create vite project using
+     npm create vite@latest
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Select project name, Package name, framework and variant
+
+4. Run following commands
+     cd LMS-Frontend
+     npm install
+     npm run dev
+
+Vite Project set up DONE!
+
