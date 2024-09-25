@@ -15,9 +15,7 @@ npm create vite@latest
 4. Run following commands
 
 ```
-cd LMS-Frontend
-
-```
+  cd LMS-Frontend
   npm install
   npm run dev
 
