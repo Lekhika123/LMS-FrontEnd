@@ -46,3 +46,9 @@ Vite Project set up DONE!
    @tailwind components;
    @tailwind utilities;
 ```
+
+### Installing Dependencies
+
+```
+    npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axi react-hot-toast @tailwind/line-clamp
+```
