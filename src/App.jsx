@@ -1,12 +1,13 @@
-
 import './App.css'
+
+import {Routes} from 'react-router-dom'
 
 function App() {
   
 
   return (
     <>
-       LMS
+      {/*<Router path*"/" element = {<HOME/>} ></Route*/ }
     </>
   )
 }
