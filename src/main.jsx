@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 
 import App from './App.jsx';
-import store from './Redux/Slices/Store.js';
+import store from './Redux/Store.js';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

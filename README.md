@@ -46,9 +46,16 @@ Vite Project set up DONE!
    @tailwind components;
    @tailwind utilities;
 ```
+5. Add the following details in the plugin property of tailwing.config
+
+ ```
+    [require("daisyui"),require("@tailwindcss/line-clamp")],
+```
 
 ### Installing Dependencies
 
 ```
     npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axi react-hot-toast @tailwind/line-clamp
 ```
+
+###
