@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 
 import Footer from '../Components/Footer.jsx';
-import { logout } from '../Redux/Slices/AuthSlice';
+// import { logout } from '../Redux/Slices/AuthSlice';
 function HomeLayout({ children }) {
    const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -28,7 +28,7 @@ function HomeLayout({ children }) {
    async function handleLogout(e) {
       e.preventDefault();
 
-      const res = await dispatch(logout());
+      const res = await dispatch();
       if(res?.payload?.success)
       navigate("/");
   }
@@ -49,7 +49,7 @@ function HomeLayout({ children }) {
             </div>
             <div className="drawer-side w-0">
                <label htmlFor="my-drawer" className="drawer-overlay"></label>
-               <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative">
+               <ul className="menu p-4 w-48 h-[100%] sm:w-80 bg-base-100 text-base-content relative">
                   <li className="w-fit absolute right-2 z-50">
                      <button onClick={hideDrawer}>
                         <AiFillCloseCircle size={24} />
@@ -97,7 +97,7 @@ function HomeLayout({ children }) {
                                         <Link to="/user/profile">Profile</Link>
                                     </button>
                                     <button className='btn-secondary px-4 py-1 font-semibold rounded-md w-full'>
-                                        <Link onClick={handleLogout}>Logout</Link>
+                                        <Link onClick={handleLogout}> Logout</Link>
                                     </button>
                                 </div>
                             </li>
